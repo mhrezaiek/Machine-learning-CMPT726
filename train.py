@@ -11,7 +11,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 
 
-input_path = '/Users/parmis/Desktop/Machine-learning-CMPT726/datasets/cleaned/matrices/concatenated_matrix_with_passive.pickle'
+input_path = 'datasets/cleaned/matrices/concatenated_matrix_with_passive.pickle'
 
 with open(input_path, "rb") as input_file:
     matrix = pickle.load(input_file)  
@@ -42,6 +42,15 @@ model = KNeighborsClassifier(n_neighbors=5)
 model.fit(X_train, y_train)
 print("KNeighborsClassifier_train: ", model.score(X_train, y_train))
 print("KNeighborsClassifier_test: ", model.score(X_test, y_test))
+
+
+
+from sklearn.ensemble import RandomForestClassifier
+
+mdoel = RandomForestClassifier(n_estimators=20, random_state=0)
+model.fit(X_train, y_train)
+print("RandomForestClassifier_train: ", model.score(X_train, y_train))
+print("RandomForestClassifier_test: ", model.score(X_test, y_test))
 
 
 # print(classification_report(y_test, model.predict(X_test)))
