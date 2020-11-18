@@ -76,7 +76,7 @@ concatenated_matrix = np.append(concatenated_matrix, complete_received_ratio, ax
 
 
 with open(matrices_path + "concatenated_matrix_with_passive.pickle", 'wb') as handle:
-    pickle.dump(concatenated_matrix, handle, protocol=pickle.HIGHEST_PROTOCOL)  
+    pickle.dump(concatenated_matrix, handle, protocol= 3 )  
 
 
 
