@@ -1,3 +1,2 @@
 
-Machine-learning-CPT726
-Hi
+In this project,  we used various machine learning models to detect whether acustomer will respond to a purchase offer sent by Starbucks via the mobile appor not[5].  To this end, we used different response levels provided by given datasets.  Different response levels ("Events") that have been used are as following:offer completed, offer received, and offer viewed.  Passive customer is one whohas not searched for information regarding the company and is not involved in anyactivities. The main goal is to detect any potential passive customers of Starbucksdepending on their activity related to the rewards offered.  Moreover, we usedsupervised learning models, to predict if a specific offer will be completed by thecustomer based on each customer characteristic. Furthermore, we use clusteringmodels to categorize customers to different groups. This can be helpful in choosingbetween different marketing strategies for Starbucks company.
